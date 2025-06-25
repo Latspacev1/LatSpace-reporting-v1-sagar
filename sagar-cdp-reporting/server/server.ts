@@ -1,90 +1,34 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import OpenAI from 'openai';
-import axios from 'axios';
+import { Agent, run, webSearchTool } from '@openai/agents';
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3001;
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+// Store conversation sessions
+const sessions: Map<string, any[]> = new Map();
+
+// Create the CDP Research Assistant Agent with WebSearchTool
+const agent = new Agent({
+    name: 'CDP Research Assistant',
+    instructions: `You are a helpful assistant specializing in CDP (Carbon Disclosure Project) climate change disclosures. 
+    
+    Help users understand and complete their CDP reporting requirements. When users ask questions that require current information about:
+    - Latest CDP reporting requirements
+    - Recent climate regulations 
+    - Current carbon pricing trends
+    - Environmental disclosure standards
+    - Climate policy updates
+    
+    Use the web search tool to find up-to-date information and provide accurate, well-researched responses.`,
+    tools: [webSearchTool()],
+    model: 'gpt-4o' // Use gpt-4o which supports web search
 });
 
-// Store assistant ID and threads
-let assistantId: string | null = null;
-const threads: Map<string, string> = new Map();
-
-// Initialize assistant on server startup
-async function initializeAssistant() {
-    try {
-        console.log('Creating CDP Research Assistant...');
-        const assistant = await openai.beta.assistants.create({
-            name: 'CDP Research Assistant',
-            instructions: 'You are a helpful assistant specializing in CDP (Carbon Disclosure Project) climate change disclosures. Help users understand and complete their CDP reporting requirements. You have access to web search functionality through the searchWeb function. Use it when users ask questions that require current information.',
-            tools: [{
-                type: 'function',
-                function: {
-                    name: 'searchWeb',
-                    description: 'Search the web for current information about a topic',
-                    parameters: {
-                        type: 'object',
-                        properties: {
-                            query: {
-                                type: 'string',
-                                description: 'The search query to find information about'
-                            }
-                        },
-                        required: ['query']
-                    }
-                }
-            }],
-            model: 'gpt-4-turbo-preview'
-        });
-        assistantId = assistant.id;
-        console.log('Assistant created successfully with ID:', assistantId);
-    } catch (error) {
-        console.error('Failed to create assistant:', error);
-        throw error;
-    }
-}
-
-// Simple web search function using DuckDuckGo API
-async function searchWeb(query: string) {
-    try {
-        const response = await axios.get('https://api.duckduckgo.com/', {
-            params: {
-                q: query,
-                format: 'json',
-                no_html: '1',
-                skip_disambig: '1'
-            }
-        });
-
-        const results = response.data.RelatedTopics || [];
-        const searchResults = results.slice(0, 5).map((topic: any) => ({
-            title: topic.Text ? topic.Text.split(' - ')[0] : 'No title',
-            content: topic.Text || 'No content available',
-            url: topic.FirstURL || ''
-        }));
-
-        return JSON.stringify({
-            query,
-            results: searchResults,
-            summary: response.data.Abstract || 'No summary available'
-        });
-    } catch (error) {
-        console.error('Web search failed:', error);
-        return JSON.stringify({
-            query,
-            error: 'Web search failed',
-            results: []
-        });
-    }
-}
+console.log('CDP Research Assistant created with WebSearchTool');
 
 // Middleware
 app.use(cors());
@@ -95,11 +39,12 @@ app.get('/health', (req: express.Request, res: express.Response) => {
     res.json({ 
         status: 'ok', 
         message: 'Server is running',
-        assistantReady: assistantId !== null
+        agentReady: true,
+        webSearchEnabled: true
     });
 });
 
-// Chat endpoint with web search
+// Chat endpoint with web search using OpenAI Agents SDK
 app.post('/api/chat-with-search', async (req: express.Request, res: express.Response) => {
     try {
         const { messages, enableSearch } = req.body;
@@ -109,110 +54,61 @@ app.post('/api/chat-with-search', async (req: express.Request, res: express.Resp
             return res.status(400).json({ error: 'Messages are required' });
         }
 
-        if (!assistantId) {
-            return res.status(503).json({ error: 'Assistant not initialized' });
-        }
-
-        // Get or create thread for this session
-        let threadId = threads.get(sessionId);
+        // Get the user's message
+        const userMessage = messages[messages.length - 1].content;
         
-        if (!threadId) {
-            console.log('Creating new thread for session:', sessionId);
-            const thread = await openai.beta.threads.create();
-            threadId = thread.id;
-            threads.set(sessionId, threadId);
-            console.log('Created thread:', threadId);
-        }
+        console.log('Processing message with Agents SDK:', userMessage);
+        console.log('Session ID:', sessionId);
 
-        // Add the user's message to the thread
-        const lastUserMessage = messages[messages.length - 1].content;
-        await openai.beta.threads.messages.create(
-            threadId,
-            {
-                role: 'user',
-                content: lastUserMessage
-            }
+        // Use the OpenAI Agents SDK to run the agent
+        const result = await run(agent, userMessage);
+
+        console.log('Agent response received');
+
+        // Extract the response
+        const response = result.finalOutput || 'I apologize, but I could not generate a response.';
+
+        // Check if web search was used by looking at the steps
+        const searchUsed = result.steps && result.steps.some((step: any) => 
+            step.toolCalls && step.toolCalls.some((call: any) => call.tool === 'web_search')
         );
 
-        // Create and poll run
-        console.log('Creating run for thread:', threadId);
-        const run = await openai.beta.threads.runs.create(
-            threadId,
-            {
-                assistant_id: assistantId
-            }
-        );
-
-        // Poll for completion
-        let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
-        
-        while (runStatus.status === 'queued' || runStatus.status === 'in_progress' || runStatus.status === 'requires_action') {
-            if (runStatus.status === 'requires_action') {
-                console.log('Run requires action - handling function calls');
-                const toolCalls = runStatus.required_action?.submit_tool_outputs.tool_calls;
-                
-                if (toolCalls) {
-                    const toolOutputs = [];
-                    for (const toolCall of toolCalls) {
-                        if (toolCall.function.name === 'searchWeb') {
-                            console.log('Executing web search');
-                            const args = JSON.parse(toolCall.function.arguments);
-                            const searchResult = await searchWeb(args.query);
-                            toolOutputs.push({
-                                tool_call_id: toolCall.id,
-                                output: searchResult
-                            });
+        // Extract search results if available
+        let searchResults: any[] = [];
+        if (searchUsed && result.steps) {
+            for (const step of result.steps) {
+                if (step.toolCalls) {
+                    for (const toolCall of step.toolCalls) {
+                        if (toolCall.tool === 'web_search' && toolCall.result) {
+                            // Parse the search results
+                            try {
+                                const searchData = typeof toolCall.result === 'string' 
+                                    ? JSON.parse(toolCall.result) 
+                                    : toolCall.result;
+                                
+                                if (searchData.results) {
+                                    searchResults = searchData.results.slice(0, 5).map((result: any) => ({
+                                        title: result.title || 'No title',
+                                        url: result.url || '',
+                                        content: result.snippet || result.content || 'No content available'
+                                    }));
+                                }
+                            } catch (parseError) {
+                                console.log('Could not parse search results:', parseError);
+                            }
                         }
                     }
-                    
-                    // Submit tool outputs
-                    await openai.beta.threads.runs.submitToolOutputs(
-                        threadId,
-                        run.id,
-                        { tool_outputs: toolOutputs }
-                    );
                 }
             }
-            
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
-            console.log('Run status:', runStatus.status);
         }
 
-        if (runStatus.status === 'completed') {
-            // Retrieve messages
-            const threadMessages = await openai.beta.threads.messages.list(threadId);
-            
-            // Find the assistant's response
-            const assistantMessage = threadMessages.data.find(msg => msg.role === 'assistant');
-            
-            if (assistantMessage && assistantMessage.content[0]?.type === 'text') {
-                const responseText = assistantMessage.content[0].text.value;
-                
-                // Check if web search was used (you can parse annotations if needed)
-                const searchResults = assistantMessage.content[0].text.annotations || [];
-                
-                res.json({ 
-                    response: responseText,
-                    searchResults: searchResults.length > 0 ? searchResults : undefined
-                });
-            } else {
-                res.json({ 
-                    response: 'I apologize, but I could not generate a response.',
-                    searchResults: []
-                });
-            }
-        } else {
-            console.error('Run failed with status:', runStatus.status);
-            res.status(500).json({ 
-                error: 'Failed to process request',
-                status: runStatus.status,
-                details: runStatus.last_error?.message
-            });
-        }
+        res.json({ 
+            response,
+            searchResults: searchResults.length > 0 ? searchResults : undefined
+        });
 
     } catch (error: any) {
-        console.error('API error:', error);
+        console.error('Agents SDK error:', error);
         res.status(500).json({ 
             error: 'An error occurred',
             details: error.message 
@@ -229,19 +125,22 @@ app.post('/api/chat', async (req: express.Request, res: express.Response) => {
             return res.status(400).json({ error: 'Messages are required' });
         }
 
-        // Use the standard chat completions API for simple chat
-        const completion = await openai.chat.completions.create({
-            model: 'gpt-4-turbo-preview',
-            messages: messages,
-            temperature: 0.7,
-            max_tokens: 1000,
+        const userMessage = messages[messages.length - 1].content;
+        
+        // Create a simple agent without web search for basic chat
+        const simpleAgent = new Agent({
+            name: 'CDP Assistant',
+            instructions: 'You are a helpful assistant specializing in CDP Climate disclosures.',
+            model: 'gpt-4o'
         });
 
-        const response = completion.choices[0]?.message?.content || 'No response generated';
+        const result = await run(simpleAgent, userMessage);
+        const response = result.finalOutput || 'No response generated';
+        
         res.json({ response });
 
     } catch (error: any) {
-        console.error('Chat API error:', error);
+        console.error('Simple chat error:', error);
         res.status(500).json({ 
             error: 'Failed to process chat request',
             details: error.message 
@@ -249,19 +148,8 @@ app.post('/api/chat', async (req: express.Request, res: express.Response) => {
     }
 });
 
-// Start server and initialize assistant
-async function startServer() {
-    try {
-        await initializeAssistant();
-        
-        app.listen(port, () => {
-            console.log(`Server running on port ${port}`);
-            console.log(`Assistant ready with ID: ${assistantId}`);
-        });
-    } catch (error) {
-        console.error('Failed to start server:', error);
-        process.exit(1);
-    }
-}
-
-startServer();
+// Start server
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+    console.log('OpenAI Agents SDK WebSearchTool ready');
+});

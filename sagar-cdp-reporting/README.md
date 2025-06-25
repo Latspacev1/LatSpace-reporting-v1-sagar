@@ -79,5 +79,5 @@ The chatbot will automatically search the web when it needs current information 
 
 - **Frontend**: React, TypeScript, Vite, Tailwind CSS
 - **Backend**: Node.js, Express, TypeScript
-- **AI**: OpenAI GPT-4 with function calling
-- **Web Search**: DuckDuckGo API
+- **AI**: OpenAI Agents SDK with GPT-4
+- **Web Search**: OpenAI WebSearchTool (hosted by OpenAI)
