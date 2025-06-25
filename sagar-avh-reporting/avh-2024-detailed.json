@@ -1,0 +1,1778 @@
+{
+  "sheetName": " 2024",
+  "dataStartRow": 0,
+  "totalRows": 156,
+  "indicators": [
+    {
+      "rowNumber": 7,
+      "indicator": "4",
+      "value": "Report",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 9,
+      "indicator": "entity_id",
+      "value": "entity",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 10,
+      "indicator": "Internal Entity id",
+      "value": "Entity",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 11,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 12,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 13,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 14,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 15,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 16,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 17,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 18,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 19,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 20,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 21,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 22,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 23,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 24,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 25,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 26,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 27,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 28,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 29,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 30,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 31,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 32,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 33,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 34,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 35,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 36,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 37,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 38,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 39,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 40,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 41,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 42,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 43,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 44,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 45,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 46,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 47,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 48,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 49,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 50,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 51,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 52,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 53,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 54,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 55,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 56,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 57,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 58,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 59,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 60,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 61,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 62,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 63,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 64,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 65,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 66,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 67,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 68,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 69,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 70,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 71,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 72,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 73,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 74,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 75,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 76,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 77,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 78,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 79,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 80,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 81,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 82,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 83,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 84,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 85,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 86,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 87,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 88,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 89,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 90,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 91,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 92,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 93,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 94,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 95,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 96,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 97,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 98,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 99,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 100,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 101,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 102,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 103,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 104,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 105,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 106,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 107,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 108,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 109,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 110,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 111,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 112,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 113,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 114,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 115,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 116,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 117,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 118,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 119,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 120,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 121,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 122,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 123,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 124,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 125,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 126,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 127,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 128,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 129,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 130,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 131,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 132,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 133,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 134,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 135,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 136,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 137,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 138,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 139,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 140,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 141,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 142,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 143,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 144,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 145,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 146,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 147,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 148,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 149,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 150,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 151,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 152,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 153,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    },
+    {
+      "rowNumber": 154,
+      "indicator": "12",
+      "value": "Sagar Cements",
+      "hasValue": true
+    }
+  ],
+  "patterns": {
+    "avhIndicators": [],
+    "numericIndicators": [],
+    "textIndicators": [
+      {
+        "rowNumber": 7,
+        "indicator": "4",
+        "value": "Report",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 9,
+        "indicator": "entity_id",
+        "value": "entity",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 10,
+        "indicator": "Internal Entity id",
+        "value": "Entity",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 11,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 12,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 13,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 14,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 15,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 16,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 17,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 18,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 19,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 20,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 21,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 22,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 23,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 24,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 25,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 26,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 27,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 28,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 29,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 30,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 31,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 32,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 33,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 34,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 35,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 36,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 37,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 38,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 39,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 40,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 41,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 42,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 43,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 44,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 45,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 46,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 47,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 48,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 49,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 50,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 51,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 52,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 53,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 54,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 55,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 56,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 57,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 58,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 59,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 60,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 61,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 62,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 63,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 64,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 65,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 66,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 67,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 68,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 69,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 70,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 71,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 72,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 73,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 74,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 75,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 76,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 77,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 78,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 79,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 80,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 81,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 82,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 83,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 84,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 85,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 86,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 87,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 88,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 89,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 90,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 91,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 92,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 93,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 94,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 95,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 96,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 97,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 98,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 99,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 100,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 101,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 102,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 103,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 104,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 105,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 106,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 107,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 108,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 109,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 110,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 111,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 112,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 113,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 114,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 115,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 116,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 117,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 118,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 119,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 120,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 121,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 122,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 123,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 124,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 125,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 126,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 127,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 128,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 129,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 130,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 131,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 132,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 133,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 134,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 135,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 136,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 137,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 138,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 139,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 140,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 141,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 142,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 143,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 144,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 145,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 146,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 147,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 148,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 149,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 150,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 151,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 152,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 153,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      },
+      {
+        "rowNumber": 154,
+        "indicator": "12",
+        "value": "Sagar Cements",
+        "hasValue": true
+      }
+    ],
+    "emptyIndicators": []
+  }
+}

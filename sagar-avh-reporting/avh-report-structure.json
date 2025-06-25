@@ -1,0 +1,58 @@
+{
+  "totalSheets": 3,
+  "sheets": [
+    {
+      "name": "Export Summary",
+      "rows": 10,
+      "columns": 1,
+      "headers": [
+        "This document was exported from Numbers. Each table was converted to an Excel worksheet. All other objects on each Numbers sheet were placed on separate worksheets. Please be aware that formula calculations may differ in Excel."
+      ],
+      "sampleData": [
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "name": "2023",
+      "rows": 230,
+      "columns": 2,
+      "headers": [
+        null,
+        "Enter the values in the blue cells. Only values for numeric, textual and multiple choice indicators will be imported. If the cell is left empty the existing data is not removed."
+      ],
+      "sampleData": [
+        [
+          null,
+          "For multiple choice indicators, remove the values which are not valid. If there are several values keep them separated by ';'."
+        ],
+        [
+          null,
+          "The explanation is mandatory if the indicator is not applicable or not available. If the indicator is marked as both not applicable and not available, it will be saved as not available"
+        ],
+        []
+      ]
+    },
+    {
+      "name": " 2024",
+      "rows": 156,
+      "columns": 2,
+      "headers": [
+        null,
+        "Enter the values in the blue cells. Only values for numeric, textual and multiple choice indicators will be imported. If the cell is left empty the existing data is not removed."
+      ],
+      "sampleData": [
+        [
+          null,
+          "For multiple choice indicators, remove the values which are not valid. If there are several values keep them separated by ';'."
+        ],
+        [
+          null,
+          "The explanation is mandatory if the indicator is not applicable or not available. If the indicator is marked as both not applicable and not available, it will be saved as not available"
+        ],
+        []
+      ]
+    }
+  ]
+}
