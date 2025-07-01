@@ -10,6 +10,7 @@ interface SidebarProps {
   onSectionSelect: (sectionId: string) => void;
   onSectionToggle: (sectionId: string) => void;
   onQuestionSelect: (questionId: string) => void;
+  completedQuestions: Set<string>;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ 
@@ -18,7 +19,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   selectedQuestion,
   onSectionSelect,
   onSectionToggle,
-  onQuestionSelect
+  onQuestionSelect,
+  completedQuestions
 }) => {
   const getQuestionsForSection = (sectionId: string) => {
     return questions.filter(q => q.sectionId === sectionId);
@@ -87,6 +89,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                     <div className="flex items-center gap-2">
                       <span className="text-gray-500">{question.id}</span>
                       <span className="flex-1">{question.text}</span>
+                      {completedQuestions.has(question.id) && <Check size={16} className="text-green-500" />}
                     </div>
                   </button>
                 ))}

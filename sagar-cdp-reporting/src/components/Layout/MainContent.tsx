@@ -10,6 +10,7 @@ interface MainContentProps {
   onAnswerChange: (answer: string) => void;
   onQuestionComplete?: (questionId: string, completed: boolean) => void;
   onDraftStateChange?: (state: DraftState) => void;
+  onCopilotModeChange?: (mode: 'ASK' | 'WRITE') => void;
 }
 
 const MainContent: React.FC<MainContentProps> = ({ 
@@ -17,7 +18,8 @@ const MainContent: React.FC<MainContentProps> = ({
   answer,
   onAnswerChange,
   onQuestionComplete,
-  onDraftStateChange
+  onDraftStateChange,
+  onCopilotModeChange
 }) => {
   const [showDocumentation, setShowDocumentation] = useState(true);
   const currentQuestion = questions.find(q => q.id === questionId);
@@ -46,6 +48,7 @@ const MainContent: React.FC<MainContentProps> = ({
               onAnswerChange={onAnswerChange}
               onComplete={handleComplete}
               onDraftStateChange={handleDraftStateChange}
+              onCopilotModeChange={onCopilotModeChange}
             />
             
           </div>

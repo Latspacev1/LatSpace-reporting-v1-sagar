@@ -10,6 +10,7 @@ interface SidebarProps {
   onSectionSelect: (sectionId: string) => void;
   onSectionToggle: (sectionId: string) => void;
   onQuestionSelect: (questionId: string) => void;
+  completedQuestions: Set<string>;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ 
@@ -18,7 +19,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   selectedQuestion,
   onSectionSelect,
   onSectionToggle,
-  onQuestionSelect
+  onQuestionSelect,
+  completedQuestions
 }) => {
   const getQuestionsForSection = (sectionId: string) => {
     return questions.filter(q => q.sectionId === sectionId);
@@ -41,12 +43,12 @@ const Sidebar: React.FC<SidebarProps> = ({
       <div className="p-4 border-b border-gray-200">
         <h2 className="font-medium mb-2">Disclosure Requirements</h2>
         <div className="flex justify-between items-center text-xs">
-          <span className="text-gray-500">0/170 complete</span>
-          <span className="text-gray-500">0%</span>
+          <span className="text-gray-500">6/170 complete</span>
+          <span className="text-gray-500">{((6/170)*100).toFixed(0)}%</span>
         </div>
         <div className="mt-2 relative">
           <div className="w-full h-1 bg-gray-200"></div>
-          <div className="absolute top-0 left-0 h-1 bg-green-500" style={{ width: '0%' }}></div>
+          <div className="absolute top-0 left-0 h-1 bg-green-500" style={{ width: `${(6/170)*100}%` }}></div>
         </div>
         <div className="mt-4">
           <button className="flex items-center justify-between w-full p-2 border border-gray-300 text-sm">
@@ -87,6 +89,9 @@ const Sidebar: React.FC<SidebarProps> = ({
                     <div className="flex items-center gap-2">
                       <span className="text-gray-500">{question.id}</span>
                       <span className="flex-1">{question.text}</span>
+                      {completedQuestions && completedQuestions.has(question.id) && (
+                        <Check size={16} className="text-green-500 ml-1" />
+                      )}
                     </div>
                   </button>
                 ))}

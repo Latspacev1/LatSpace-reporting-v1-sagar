@@ -49,7 +49,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -71,7 +71,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "ESG Vision statement released\r\nElectric Wheel Loaders deployed for inside plant materials handling\r\nElectric Tucks are deployed for inward / outward materails movement\r\nPilot project for growing of Bio mass has started in about 25 Hectares \r\nPilot project for production of Bio-fuel is in progress.\r\nNew Eco friednly Cement product COMPOSIT CEMENT with Clinker, GGBS, FlyAsh in equal ratio launched\r\nEco friendly Cement product INSTA POWER with higher ratio of FlyAsh in OPC replacing part clinker.\r\nClinker Factor reduced from 81.75% to 75.01%\r\nRisk Registar is prepared",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -93,7 +93,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "33% of Independent Directors on Board\r\n3 Women members on Board\r\nComprehensive Risk Registar prepared\r\nReceived Best Management Award from Government of Telangana.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -115,7 +115,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Action Plan for Emission reduction along with targets has been developed.\r\nInitiated Steps such as equipment upgrade, capacity building at acquired / new plants by way of team formation and training.\r\nClinker factor reduced from 81.75% to 75.01%\r\nCO2 / Ton Cementitious reduced from 703.08 to 700.28 kgs\r\nTSR is at 3.31%, Green Energy Ratio is 27%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -137,7 +137,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Zero fatalities\r\n30.6 Million INR spent towards CSR, 69629 Lives impacted \r\n5 Woman employees jopined in 2022-23 taking total to 14",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -159,7 +159,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Commitment submitted to SBTi to reduce the emissions in line to SBTi 1.5 C targets. The target development and submission to SBTi is in process.\r\nTargets for year 2030;\r\nScope 1 - 495 Kgs\r\nScope 2 - 8 Kgs\r\nScope 3 - 15.5 Kgs\r\nTotal - 518.5 Kgs.\r\nTarget for Year 2050 - Net Zero\r\nReducing the clinker factor to 64% from present 75%.\r\nIncreasing TSR to 25% by 2030\r\nIncreasing Green Energy Ratio to 50% by 2030\r\nReducing Spec Heat to 700 Kcal and Spec Electric to 65 KWH by 2030\r\n30% of materials Transportation by Green Vehicles by 2030",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -181,7 +181,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Mathampally Lime Stone Mine received 5 Star rating \r\nBayyavaram unit received National award from Gov of India for EXCELLENCE in ENERGY MANAGEMENT \r\nBayyavaram unit received NATIONAL ENERGY LEADER award from CII\r\nCompany received Best Management award from Gov of Telangana\r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -203,7 +203,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "1.Installation  activities of 6 MW solar and 4.35 MW WHRS at Gudipadu plant is under progress\r\n2.To reduce Clinker Factor to 64% by 2030.\r\n3.To construct Harvest pits to capture 100% Rain  water\r\n4.Increase green energy ratio to 50% by 2030.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -225,7 +225,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "\r\nDeveloping, ESG Framework, templates, manuals for ESG actions / projects performance monitoring, reviewing.\r\nTo deploy software tool to capture all the required DATA and to feed for the SBTI, CDP, BRSR etc.\r\nTo include all Scope 3 Categories for Scope 3 CO2.\r\nTo try internal carbon Price\r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -247,7 +247,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Pictures",
         "explanation": "The materiality parameter are being reviewed and updated matrix would be capture in ESG Frame work",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -269,7 +269,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Anji Reddy\r\nanjireddyo@sagarcements.in",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -291,7 +291,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Int",
         "explanation": 4,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -313,7 +313,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Shree Sreekanth Reddy, JMD",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -336,7 +336,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "CDP (Carbon Disclosure Project) ; \r\nInteracted seeking support for SBTI Target Development,\r\nInteracted multiple times and last interaction was on 4th July 2023.\r\n\r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -357,7 +357,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -379,7 +379,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "MCQ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -401,7 +401,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -423,7 +423,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -445,7 +445,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -467,7 +467,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -489,7 +489,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -511,7 +511,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -535,7 +535,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Audit committee  ; \r\nRemuneration committee ; \r\nRisks (management) committee ; \r\nOther (please describe in comments) ; \r\nNo",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -559,7 +559,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Integrity code / Code of conduct ; \r\nCorporate governance charter ; \r\nInnovation strategy ; \r\nCybersecurity strategy (information security, GDPR, etc.) ; \r\nHR strategy ; \r\nESG policy or strategy ; \r\nESG questionnaire ; \r\nOther (please describe in comments) ; \r\nNone of the above",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -582,7 +582,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -605,7 +605,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -628,7 +628,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -651,7 +651,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -673,7 +673,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -697,7 +697,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Interaction between board of directors & management  ; \r\nFunctioning board of directors ; \r\nAudit committee organisation ; \r\nRemuneration committee organisation ; \r\nAny other committee of the board including membership and leadership ; \r\nSupport ; \r\nConflicts of interest ; \r\nAgenda management ; \r\nOther (please describe in comments) ; \r\nNone of the above",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -719,7 +719,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -742,7 +742,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -764,7 +764,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -788,7 +788,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Action plans are made on Environmental topics and at least once a year discussed at the BoD ; \r\nAction plans are made on Social topics and at least once a year discussed at the BoD ; \r\nAction plans are made on Governance topics and at least once a year discussed at the BoD ; \r\nESG priorities are not discussed at the Board of Directors",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -811,7 +811,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -833,7 +833,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -856,7 +856,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -878,7 +878,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -901,7 +901,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -923,7 +923,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -946,7 +946,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -968,7 +968,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -991,7 +991,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1013,7 +1013,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1036,7 +1036,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1058,7 +1058,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1081,7 +1081,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1103,7 +1103,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1127,7 +1127,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Sustainability officer (SPOC): The person responsible at company level to interact with AvH and coordinate on all Sustainability/ESG related matters for your company ; \r\nSustainability committee ; \r\nSustainability team ; \r\nSustainability referents on company's sites ; \r\nOther (please describe in comments) ; \r\nNone ; \r\nSponsor at executive committee",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1150,7 +1150,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1173,7 +1173,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1196,7 +1196,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1220,7 +1220,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "GRI standards ; \r\nSustainable Development Goals (SDGs) ; \r\nUN Global Compact (UN GC) ; \r\nUN Guiding Principle on Business and Human Rights ; \r\nUN Guiding Principle for Responsible Investment (UN PRI) ; \r\nB Corp ; \r\nCDP (Carbon Disclosure Project) ; \r\nISO 26000 ; \r\nSASB ; \r\nNatural Capital protocol ; \r\nIntegrated Reporting ; \r\nEPRA ; \r\nGRESB ; \r\nTCFD ; \r\nOther (please describe in comments) ; \r\nNone of the above ; \r\nEFRAG standards ; \r\nTNFD",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1243,7 +1243,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1266,7 +1266,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1288,7 +1288,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1310,7 +1310,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Text",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1332,7 +1332,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1354,7 +1354,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Text",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1376,7 +1376,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1398,7 +1398,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1422,7 +1422,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "A personal data registration document is in place ; \r\nA personal data breach Reporting process is in place ; \r\nA data protection officer has been appointed ; \r\nOther (please describe in comments) ; \r\nNone of the above",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1445,7 +1445,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1468,7 +1468,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1491,7 +1491,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1514,7 +1514,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "MCQ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1537,7 +1537,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1559,7 +1559,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1583,7 +1583,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Core values  ; \r\nWork environment ; \r\nHuman Rights ; \r\nSustainability and environment ; \r\nData protection ; \r\nAntitrust and competition ; \r\nAnti-money laundering ; \r\nAnti-bribery and Anti-corruption ; \r\nRestrictive measures/sanctions ; \r\nOther (please describe in comments) ; \r\nThere is no formalized code of ethics / code of conduct",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1605,7 +1605,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1628,7 +1628,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1650,7 +1650,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1673,7 +1673,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1695,7 +1695,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1718,7 +1718,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1741,7 +1741,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "MCQ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1764,7 +1764,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1787,7 +1787,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1810,7 +1810,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1833,7 +1833,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2023,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1857,7 +1857,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1881,7 +1881,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No- excluded",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1905,7 +1905,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "None of the above",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1928,7 +1928,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "To take advice from JMD",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1953,7 +1953,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1977,7 +1977,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "No- not in line with the CSRD requirements mentioned above",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -1999,7 +1999,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2021,7 +2021,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Text",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2045,7 +2045,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2069,7 +2069,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2093,7 +2093,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2117,7 +2117,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2140,7 +2140,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Our Sites are not in Bioodiversity sensitive areas",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2163,7 +2163,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Not Applicable",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2186,7 +2186,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Text",
         "explanation": "Not Applicable",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2210,7 +2210,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2234,7 +2234,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2258,7 +2258,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2282,7 +2282,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2306,7 +2306,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2330,7 +2330,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "\r\nYes, on Gender equality   ; \r\nYes, on Anti-discrimination   ; ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2354,7 +2354,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2378,7 +2378,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2402,7 +2402,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "Respect for human rights, including labour rights, of its own workers ; ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2426,7 +2426,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes- topics are aligned",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2450,7 +2450,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No- not aligned",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2474,7 +2474,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2498,7 +2498,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2522,7 +2522,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No assessment performed",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2546,7 +2546,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "MCQ",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2570,7 +2570,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2594,7 +2594,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No- not aligned",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2618,7 +2618,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2642,7 +2642,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No- not aligned",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2666,7 +2666,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2690,7 +2690,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No- not aligned",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2734,7 +2734,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Text",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2755,7 +2755,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2776,7 +2776,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2797,7 +2797,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2818,7 +2818,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2840,7 +2840,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2862,7 +2862,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2886,7 +2886,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2908,7 +2908,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2930,7 +2930,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2952,7 +2952,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2974,7 +2974,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -2996,7 +2996,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3018,7 +3018,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3040,7 +3040,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3062,7 +3062,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3084,7 +3084,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3106,7 +3106,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3128,7 +3128,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3150,7 +3150,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3172,7 +3172,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3194,7 +3194,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3216,7 +3216,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3238,7 +3238,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3260,7 +3260,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3282,7 +3282,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3304,7 +3304,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Text",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3326,7 +3326,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3348,7 +3348,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3370,7 +3370,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "M€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3394,7 +3394,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3419,7 +3419,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "Yes- on scopes 1- 2 and 3",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3442,7 +3442,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3465,7 +3465,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3488,7 +3488,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3512,7 +3512,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/kWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3536,7 +3536,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/kWh LHV",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3560,7 +3560,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/kWh LHV",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3584,7 +3584,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/L",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3608,7 +3608,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/L",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3632,7 +3632,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/Kg",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3656,7 +3656,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/kWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3680,7 +3680,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "kgCO2eq/kWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3704,7 +3704,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3728,7 +3728,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Kg",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3752,7 +3752,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3776,7 +3776,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3800,7 +3800,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3824,7 +3824,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3848,7 +3848,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3872,7 +3872,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3896,7 +3896,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3919,7 +3919,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3942,7 +3942,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3965,7 +3965,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -3989,7 +3989,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4013,7 +4013,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4035,7 +4035,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4059,7 +4059,7 @@ export const avhData: AVHData[] = [
         "year": 2023,
         "value": "Y/N",
         "explanation": "No- do not use carbon credits",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4081,7 +4081,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4103,7 +4103,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4125,7 +4125,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4147,7 +4147,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "L",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4169,7 +4169,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "L",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4191,7 +4191,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4213,7 +4213,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4235,7 +4235,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4257,7 +4257,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4279,7 +4279,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4301,7 +4301,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4323,7 +4323,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4345,7 +4345,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4367,7 +4367,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4389,7 +4389,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4411,7 +4411,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4433,7 +4433,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4455,7 +4455,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "t",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4477,7 +4477,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "t",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4499,7 +4499,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "t",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4521,7 +4521,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "t",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4543,7 +4543,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "m3",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4565,7 +4565,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "t",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4587,7 +4587,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "t",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4609,7 +4609,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4631,7 +4631,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4653,7 +4653,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "FTE",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4675,7 +4675,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4697,7 +4697,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4719,7 +4719,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4741,7 +4741,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4763,7 +4763,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4785,7 +4785,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4807,7 +4807,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4829,7 +4829,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4851,7 +4851,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4873,7 +4873,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4895,7 +4895,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "%",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4917,7 +4917,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4939,7 +4939,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4961,7 +4961,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -4983,7 +4983,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5005,7 +5005,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5027,13 +5027,13 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2023,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       }
     ],
-    "lastUpdated": "2025-06-23T11:07:21.911Z",
-    "completionPercentage": 100
+    "lastUpdated": "2025-07-01T15:49:36.259Z",
+    "completionPercentage": 0
   },
   {
     "year": 2024,
@@ -5056,7 +5056,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "ESG framework is developed\r\nEmission targets are submitted to SBTi for Validation.\r\nPilot project of Biomass growing is successful and is cultivating over  37 hectares and used as kiln fuel.\r\nClinker factor decreased from 75.01% to 73.98%\r\nCO2 / Ton Cementitious reduced from  700.28 kgs to 677.20 kgs total of all three scopes\r\nBlended cements ratio increased from 49.0% to  54.00 %.\r\nTSR is at 3.3% Constructed rain water harvesting systems in all plants specific water consumption reduced from 168 litres to 155 litres per ton cementitious\r\n Appointed ESG co-ordinators at each site and capturing all plant's ESG performances and reviewed on monthly basis.\u000bRegular training is provided to for capacity enhancement.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5078,7 +5078,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "33% of Independent Directors on Board\r\nThree (3) Women members on Board\r\nReceived Best Management Award from Government of Telangana.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5100,7 +5100,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Clinker factor is reduced from 75.01% to 73.98%.\r\nPlanted 36580 saplings in 18.13 hectares during the year against target of 10000 samplings in 5 hectare.\r\nFresh water consumption is reduced by 7.7% from previous year.\r\nCO2 / Ton Cementitious reduced from  700.28 kgs to 677.20 kgs toatl from all 3  scopes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5122,7 +5122,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Rs 290.11 Lakhs spent towards social support with 107865 beneficiaries.\u000b Three new female are employed making total 17.\u000b About 12181 suppliers are interacted against 10860 during previous year.\u000b",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5144,7 +5144,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Targets submitted to SBTi to reduce the emissions in line with SBTi 1.5 degrees Temp rise.\r\nTargets for the year 2030;\r\nScope 1 - 495 Kgs CO2\r\nScope 2 - 8 Kgs CO2\r\nScope 3 - 15.5 Kgs CO2\r\nTotal - 518.5 Kgs.\r\nTarget for Year 2050 - Net Zero \r\nReducing the clinker factor to 64% from present 74% by 2030 as short term target\r\nIncreasing TSR to 25% by 2030\r\nIncreasing Green Energy ratio to 50% by 2030\r\nReducing specific heat to 700KCal and Specific electricty consumption to 65KWh by 2030\r\n30% material transportation by green vehicles.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5166,7 +5166,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Gudipadu Plant has received best performance award by BIS- Bureau of Indian Standards, for non failures of its OPC and PPC products for three consecutive years.\r\nSagar Cements group has received 27 awards in QCFI National Cement conclave (3rd addition) in various categories.\r\nJajpur plant has received appreciation from BIS for the non failures in its PSC product for 3 consecutive years.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5188,7 +5188,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Installation of 6 MW Solar Power and 4.35 MW WHRS Power at Gudipadu plant is under progress.\r\nTo reduce Clinker Factor to 70.51% during the year..\r\nTo construct Harvest pits to capture 100% Rain  water\r\nIncrease green energy ratio to 20% during 2025\r\nIncreasing the TSR to 11% during 2025",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5210,7 +5210,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Going for CDP scoring in climate change\r\nTo develop baseline for all plants for all material issues of ESG along with action plan \r\nTo perform internal ESG audits at all plants.\r\nESG framework developed.\r\nESG Software deployment is in planing. ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5232,7 +5232,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Pictures",
         "explanation": "13 material topics of ESG are captured in ESG framework through materiality assessment and being monitored and reviewed on monthly basis.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5255,7 +5255,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "O.Anji Reddy\r\nanjireddyo@sagarcements.in\u000bS. Prasoonamba\u000bprasoona.s@sagarcements.in",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5278,7 +5278,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 5,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5301,7 +5301,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Shree Sreekanth Reddy, JMD",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5366,7 +5366,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "\r\nNone of the above \r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5388,7 +5388,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": "ESG Reporting was not done.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5410,7 +5410,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2024,
         "value": "MCQ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5431,7 +5431,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5452,7 +5452,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5474,7 +5474,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2024,
         "value": "Y/N",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5496,7 +5496,7 @@ export const avhData: AVHData[] = [
         "options": [],
         "year": 2024,
         "value": "UCQ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5519,7 +5519,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 9,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5542,7 +5542,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 3,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5565,7 +5565,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 3,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5588,7 +5588,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 2,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5610,7 +5610,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5634,7 +5634,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Audit committee  ; \r\nRemuneration committee ; \r\nRisks (management) & ESG committee ; \r\nSecurities allotment committee Stake Holder relationship committee Investment committee Corporate Social Responsibility Committee",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5658,7 +5658,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Integrity code / Code of conduct ; \r\nCorporate governance charter ; \r\nInnovation strategy ; \r\nCybersecurity strategy (information security, GDPR, etc.) ; \r\nHR strategy ; \r\nESG policy or strategy ; \u000bHR Strategy\u000bESG Questionaire",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5682,7 +5682,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5706,7 +5706,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5730,7 +5730,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5754,7 +5754,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5777,7 +5777,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5801,7 +5801,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Interaction between board of directors & management  ; \r\nFunctioning board of directors ; \r\nAudit committee organisation ; \r\nRemuneration committee organisation ; \r\nFormation of other committees  \r\nSupport ; \r\nConflicts of interest ; \r\nAgenda management ; \r\nOthers",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5824,7 +5824,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 9,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5848,7 +5848,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5870,7 +5870,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5894,7 +5894,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Action plans are made on Environment topics and at least once a year discussed at the BoD\r\nAction plans are made on Social topics and at least once a year discussed at the BoD\r\nAction plans are made on Governance topics and at least once a year discussed at the BoD",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5918,7 +5918,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5941,7 +5941,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5965,7 +5965,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -5987,7 +5987,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6011,7 +6011,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6034,7 +6034,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6058,7 +6058,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6081,7 +6081,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 6,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6105,7 +6105,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6128,7 +6128,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6152,7 +6152,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6174,7 +6174,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6198,7 +6198,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6221,7 +6221,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6245,7 +6245,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Sustainability officer (SPOC):  Sustainability committee ; \r\nSustainability team ; \r\nSustainability referents on company's sites ; \r\nSponsor at executive committee",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6269,7 +6269,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6293,7 +6293,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6317,7 +6317,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "UCQ",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6341,7 +6341,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6365,7 +6365,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "GRI standards ; \r\nSustainable Development Goals (SDGs) ; \r\nSASB ; \r\nIntegrated Reporting ;  ISO 26000\r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6389,7 +6389,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6413,7 +6413,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6436,7 +6436,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6459,7 +6459,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Put in place a mechanism to identify a project and developing its estimated budget,predicted outcome,minlestones,timeline etc.\r\nDevise a periodical system for monitoring projects in terms of progress,spend,comparison of results timeline etc and submitting a report to board for review and approval\r\nStrive to develop technologies that can provide solution to social and environmental issues and  help groe income sources in local communities.\r\nActively collaborate with academia, start-ups, research organisations, architects, designers, builders ets to promote low-emission products and solutions.",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6482,7 +6482,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 7,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6505,7 +6505,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Text",
         "explanation": "Green biofuel to replace coal\r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6528,7 +6528,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 7,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6551,7 +6551,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "%",
         "explanation": 0.1,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6575,7 +6575,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "A personal data registration document is in place ; \r\nA personal data breach Reporting process is in place ; \r\nA data protection officer has been appointed ; ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6599,7 +6599,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6623,7 +6623,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6647,7 +6647,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6671,7 +6671,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "4. Managed",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6695,7 +6695,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6718,7 +6718,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6742,7 +6742,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Core values  ; \r\nWork environment ; \r\nHuman Rights ; \r\nSustainability and environment ; \r\nData protection ; \r\nAntitrust and competition ; \r\nAnti-money laundering ; \r\nAnti-bribery and Anti-corruption ; \r\n",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6765,7 +6765,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 10,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6789,7 +6789,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6812,7 +6812,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 8,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6836,7 +6836,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6859,7 +6859,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 6,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6883,7 +6883,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Periodic training employees",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6907,7 +6907,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6931,7 +6931,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6955,7 +6955,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6977,7 +6977,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -6999,7 +6999,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7023,7 +7023,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7048,7 +7048,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes- on scopes 1- 2 and 3 not aligned with SBTi",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7071,7 +7071,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "€",
         "explanation": 105949705,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7095,7 +7095,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7119,7 +7119,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7143,7 +7143,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MCQ",
         "explanation": "Yes, on Gender equality   ; \r\nYes, on Anti-discrimination   ; ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7191,7 +7191,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "Yes- on scopes 1- 2 and 3",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7215,7 +7215,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 3682260.09704336,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7239,7 +7239,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 198659.82900584,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7263,7 +7263,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 259612.2,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7288,7 +7288,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "kgCO2eq/kWh",
         "explanation": 0.716,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7312,7 +7312,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "kgCO2eq/kWh LHV",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7336,7 +7336,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "kgCO2eq/kWh LHV",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7361,7 +7361,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "kgCO2eq/L",
         "explanation": 2.676492,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7386,7 +7386,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "kgCO2eq/L",
         "explanation": 2.2717926,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7411,7 +7411,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "kgCO2eq/Kg",
         "explanation": 2088,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7435,7 +7435,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "kgCO2eq/kWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7459,7 +7459,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "kgCO2eq/kWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7484,7 +7484,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Kg",
         "explanation": 246.3,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7509,7 +7509,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": "Not estimated ",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7534,7 +7534,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 16188.0676776711,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7559,7 +7559,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 190838.27,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7584,7 +7584,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": "Not estimated - Included in Purchase goods & services",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7609,7 +7609,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 2149.21,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7634,7 +7634,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 346.743404366559,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7658,7 +7658,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 51.72,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7681,7 +7681,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7705,7 +7705,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 6783.61456797485,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7730,7 +7730,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "tCO2eq",
         "explanation": 43253.8358509441,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7754,7 +7754,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7778,7 +7778,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7802,7 +7802,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7826,7 +7826,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7850,7 +7850,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "tCO2eq",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7873,7 +7873,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MWh",
         "explanation": 3534287.065,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7895,7 +7895,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7917,7 +7917,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7940,7 +7940,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "L",
         "explanation": 287.06,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7963,7 +7963,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "L",
         "explanation": 1176042,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -7985,7 +7985,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8008,7 +8008,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MWh",
         "explanation": 274819.51,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8030,7 +8030,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8052,7 +8052,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8074,7 +8074,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8097,7 +8097,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MWh",
         "explanation": 7370.51,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8120,7 +8120,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MWh",
         "explanation": 52584,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8142,7 +8142,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8164,7 +8164,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8186,7 +8186,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "MWh",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8209,7 +8209,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MWh",
         "explanation": 130751,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8232,7 +8232,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "MWh",
         "explanation": 57581.8,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8255,7 +8255,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "m3",
         "explanation": 899112,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8277,7 +8277,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8300,7 +8300,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "FTE",
         "explanation": 3875,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8323,7 +8323,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Int",
         "explanation": 34009,
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8347,7 +8347,7 @@ export const avhData: AVHData[] = [
         "year": 2024,
         "value": "Y/N",
         "explanation": "No",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8369,7 +8369,7 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "Int",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       },
@@ -8391,12 +8391,12 @@ export const avhData: AVHData[] = [
         "type": "text",
         "year": 2024,
         "value": "€",
-        "completed": true,
+        "completed": false,
         "notApplicable": false,
         "notAvailable": false
       }
     ],
-    "lastUpdated": "2025-06-23T11:07:21.911Z",
-    "completionPercentage": 98
+    "lastUpdated": "2025-07-01T15:49:36.259Z",
+    "completionPercentage": 0
   }
 ];

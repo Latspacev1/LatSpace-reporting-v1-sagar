@@ -12,12 +12,14 @@ function App() {
   const [selectedQuestion, setSelectedQuestion] = useState('c0.1');
   const [showCopilot, setShowCopilot] = useState(true);
   const [sectionsState, setSectionsState] = useState(sections);
-  const [completedQuestions, setCompletedQuestions] = useState<Set<string>>(new Set());
+  const defaultCompleted = new Set(questions.filter(q => q.id !== 'c0.1').map(q => q.id));
+  const [completedQuestions, setCompletedQuestions] = useState<Set<string>>(defaultCompleted);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [draftState, setDraftState] = useState<DraftState>({
     isDrafting: false,
     progress: 0
   });
+  const [copilotMode, setCopilotMode] = useState<'ASK' | 'WRITE'>('ASK');
   
   const handleSectionToggle = (sectionId: string) => {
     setSectionsState(prevSections => 
@@ -59,6 +61,13 @@ function App() {
     }
   };
 
+  const handleCopilotModeChange = (mode: 'ASK' | 'WRITE') => {
+    setCopilotMode(mode);
+    if (!showCopilot) {
+      setShowCopilot(true);
+    }
+  };
+
   const progressPercentage = (completedQuestions.size / questions.length) * 100;
   
   return (
@@ -86,6 +95,7 @@ function App() {
             onAnswerChange={(answer) => handleAnswerChange(selectedQuestion, answer)}
             onQuestionComplete={handleQuestionComplete}
             onDraftStateChange={handleDraftStateChange}
+            onCopilotModeChange={handleCopilotModeChange}
           />
           
           {showCopilot && (
@@ -94,6 +104,7 @@ function App() {
                 onClose={() => setShowCopilot(false)} 
                 draftState={draftState}
                 questionId={selectedQuestion}
+                initialMode={copilotMode}
               />
             </div>
           )}

@@ -6,8 +6,10 @@ This application provides a CDP (Carbon Disclosure Project) reporting interface 
 
 - **Interactive CDP Questionnaire**: Complete climate disclosure forms
 - **AI Chatbot**: Get help with CDP requirements and current climate information
+- **RAG with Google Drive**: Access and search your organization's documents
 - **Web Search**: The chatbot can search the web for up-to-date information
 - **ASK/WRITE Modes**: Toggle between asking questions and content generation
+- **Multi-Source Intelligence**: Combines internal documents with web search
 
 ## Setup
 
@@ -65,9 +67,25 @@ This application provides a CDP (Carbon Disclosure Project) reporting interface 
    - CDP reporting requirements
    - Current climate regulations
    - Environmental disclosure standards
+   - Your organization's documents and data
    - General climate-related information
 
-The chatbot will automatically search the web when it needs current information to answer your questions.
+The chatbot will:
+- First search your Google Drive for relevant internal documents
+- Supplement with web search for current external information
+- Combine both sources to provide comprehensive answers
+
+## Google Drive Setup
+
+To enable Google Drive integration:
+1. Follow the instructions in `GOOGLE_DRIVE_SETUP.md`
+2. Place your OAuth credentials in `server/credentials/gcp-oauth.keys.json`
+3. Run authentication:
+   ```bash
+   cd server
+   npm run auth:gdrive
+   ```
+4. Upload your CDP-related documents to Google Drive
 
 ## API Endpoints
 

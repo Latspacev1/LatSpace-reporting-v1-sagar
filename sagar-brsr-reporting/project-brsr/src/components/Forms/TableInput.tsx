@@ -7,9 +7,10 @@ interface TableInputProps {
   value: TableRow[];
   onChange: (rows: TableRow[]) => void;
   disabled?: boolean;
+  onCellClick?: (rowId: string, columnId: string, value: any) => void;
 }
 
-const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabled = false }) => {
+const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabled = false, onCellClick }) => {
   const [rows, setRows] = useState<TableRow[]>(value.length > 0 ? value : config.rows);
 
   const handleCellChange = (rowIndex: number, columnId: string, newValue: any) => {
@@ -48,6 +49,36 @@ const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabl
     const value = row.data[column.id] || '';
     const isDisabled = disabled || false;
 
+    // If disabled, only show clickable values (no input boxes)
+    if (isDisabled) {
+      if (value && onCellClick) {
+        return (
+          <button
+            onClick={() => onCellClick(row.id, column.id, value)}
+            className="w-full p-2 text-left text-blue-600 hover:text-blue-800 hover:underline cursor-pointer"
+          >
+            {value}
+          </button>
+        );
+      }
+      // Return empty cell if no value and disabled
+      return <div className="w-full p-2"></div>;
+    }
+
+    // If value exists and onCellClick is provided, render as clickable
+    if (value && onCellClick) {
+      return (
+        <button
+          onClick={() => onCellClick(row.id, column.id, value)}
+          className="w-full p-2 text-left text-blue-600 hover:text-blue-800 hover:underline cursor-pointer"
+          disabled={isDisabled}
+        >
+          {value}
+        </button>
+      );
+    }
+
+    // Otherwise render as input
     switch (column.type) {
       case 'number':
       case 'percentage':
@@ -57,7 +88,7 @@ const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabl
             type="number"
             value={value}
             onChange={(e) => handleCellChange(rowIndex, column.id, parseFloat(e.target.value) || 0)}
-            className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:bg-gray-100"
+            className={`w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:bg-gray-100 ${value ? 'text-blue-600' : ''}`}
             disabled={isDisabled}
             step={column.type === 'percentage' ? '0.01' : 'any'}
             min="0"
@@ -69,7 +100,7 @@ const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabl
             type="date"
             value={value}
             onChange={(e) => handleCellChange(rowIndex, column.id, e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:bg-gray-100"
+            className={`w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:bg-gray-100 ${value ? 'text-blue-600' : ''}`}
             disabled={isDisabled}
           />
         );
@@ -79,9 +110,8 @@ const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabl
             type="text"
             value={value}
             onChange={(e) => handleCellChange(rowIndex, column.id, e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:bg-gray-100"
+            className={`w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:bg-gray-100 ${value ? 'text-blue-600' : ''}`}
             disabled={isDisabled}
-            placeholder={column.required ? 'Required' : 'Optional'}
           />
         );
     }
@@ -114,10 +144,7 @@ const TableInput: React.FC<TableInputProps> = ({ config, value, onChange, disabl
                 {config.columns.map((column) => (
                   <td key={column.id} className="border border-gray-300 px-4 py-2">
                     {row.label && column.id === config.columns[0].id ? (
-                      <div className="flex items-center">
-                        <span className="font-medium text-gray-700 mr-2">{row.label}</span>
-                        {renderCellInput(row, column, rowIndex)}
-                      </div>
+                      <span className="font-medium text-gray-700">{row.label}</span>
                     ) : (
                       renderCellInput(row, column, rowIndex)
                     )}

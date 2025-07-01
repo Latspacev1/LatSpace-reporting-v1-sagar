@@ -8,6 +8,7 @@ interface QuestionEditorProps {
   onAnswerChange: (answer: string) => void;
   onComplete?: (completed: boolean) => void;
   onDraftStateChange?: (state: DraftState) => void;
+  onCopilotModeChange?: (mode: 'ASK' | 'WRITE') => void;
 }
 
 const QuestionEditor: React.FC<QuestionEditorProps> = ({ 
@@ -15,7 +16,8 @@ const QuestionEditor: React.FC<QuestionEditorProps> = ({
   answer,
   onAnswerChange,
   onComplete,
-  onDraftStateChange
+  onDraftStateChange,
+  onCopilotModeChange
 }) => {
   const [isComplete, setIsComplete] = useState(false);
   const [format, setFormat] = useState('Normal');
@@ -48,11 +50,18 @@ All emissions have been third-party verified in accordance with ISO 14064-3. Our
 
   const handleDraftAnswer = async () => {
     setIsDrafting(true);
+    
+    // Switch CoPilot to WRITE mode
+    onCopilotModeChange?.('WRITE');
+    
+    // Start the agentic workflow
     onDraftStateChange?.({ isDrafting: true, progress: 0 });
+    
+    // Wait for agentic steps to complete (simulated)
+    await new Promise(resolve => setTimeout(resolve, 12000));
+    
+    // Now start typing the draft answer
     const draftText = draftAnswers[questionId] || '';
-    
-    await new Promise(resolve => setTimeout(resolve, 8000));
-    
     let currentText = '';
     for (let i = 0; i < draftText.length; i++) {
       currentText += draftText[i];
@@ -70,6 +79,57 @@ All emissions have been third-party verified in accordance with ISO 14064-3. Our
     onComplete?.(newState);
   };
   
+  const C02Table: React.FC<{ value: any, onChange: (val: any) => void }> = ({ value, onChange }) => {
+    const handleChange = (field: string, val: any) => {
+      onChange({ ...value, [field]: val });
+    };
+    return (
+      <table className="w-full border text-sm mt-2">
+        <thead>
+          <tr>
+            <th className="bg-gray-700 text-white border px-3 py-2">End date of reporting year</th>
+            <th className="bg-gray-700 text-white border px-3 py-2">Alignment of this reporting period with your financial reporting period</th>
+            <th className="bg-gray-700 text-white border px-3 py-2">Indicate if you are providing emissions data for past reporting years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border px-3 py-2">
+              <input
+                type="date"
+                className="border rounded px-2 py-1 w-full"
+                value={value.endDate || ''}
+                onChange={e => handleChange('endDate', e.target.value)}
+              />
+            </td>
+            <td className="border px-3 py-2">
+              <select
+                className="border rounded px-2 py-1 w-full"
+                value={value.alignWithFinancial || ''}
+                onChange={e => handleChange('alignWithFinancial', e.target.value)}
+              >
+                <option value="">Select from:</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </td>
+            <td className="border px-3 py-2">
+              <select
+                className="border rounded px-2 py-1 w-full"
+                value={value.providePastEmissions || ''}
+                onChange={e => handleChange('providePastEmissions', e.target.value)}
+              >
+                <option value="">Select from:</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    );
+  };
+
   return (
     <div>
       <div className="flex items-center justify-between mb-3">
@@ -96,52 +156,59 @@ All emissions have been third-party verified in accordance with ISO 14064-3. Our
         </button>
       </div>
       
-      <div className="border border-gray-200">
-        <div className="flex border-b border-gray-200">
-          <div className="relative">
-            <select 
-              className="appearance-none bg-transparent border-none px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
-              value={format}
-              onChange={(e) => setFormat(e.target.value)}
-            >
-              <option>Normal</option>
-              <option>Heading 1</option>
-              <option>Heading 2</option>
-              <option>Heading 3</option>
-            </select>
-            <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-              <ChevronDown size={16} className="text-gray-500" />
+      {questionId === 'c0.2' ? (
+        <C02Table
+          value={answer ? JSON.parse(answer) : { endDate: '', alignWithFinancial: '', providePastEmissions: '' }}
+          onChange={val => onAnswerChange(JSON.stringify(val))}
+        />
+      ) : (
+        <div className="border border-gray-200">
+          <div className="flex border-b border-gray-200">
+            <div className="relative">
+              <select 
+                className="appearance-none bg-transparent border-none px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                value={format}
+                onChange={(e) => setFormat(e.target.value)}
+              >
+                <option>Normal</option>
+                <option>Heading 1</option>
+                <option>Heading 2</option>
+                <option>Heading 3</option>
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                <ChevronDown size={16} className="text-gray-500" />
+              </div>
+            </div>
+            
+            <div className="flex border-l border-gray-200">
+              <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
+                <Bold size={18} className="text-gray-600" />
+              </button>
+              <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
+                <Italic size={18} className="text-gray-600" />
+              </button>
+              <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
+                <List size={18} className="text-gray-600" />
+              </button>
+              <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
+                <Link size={18} className="text-gray-600" />
+              </button>
+              <button className="p-2 hover:bg-gray-100">
+                <Underline size={18} className="text-gray-600" />
+              </button>
             </div>
           </div>
           
-          <div className="flex border-l border-gray-200">
-            <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
-              <Bold size={18} className="text-gray-600" />
-            </button>
-            <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
-              <Italic size={18} className="text-gray-600" />
-            </button>
-            <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
-              <List size={18} className="text-gray-600" />
-            </button>
-            <button className="p-2 hover:bg-gray-100 border-r border-gray-200">
-              <Link size={18} className="text-gray-600" />
-            </button>
-            <button className="p-2 hover:bg-gray-100">
-              <Underline size={18} className="text-gray-600" />
-            </button>
+          <div className="p-3 min-h-[150px]">
+            <textarea 
+              className="w-full h-full min-h-[120px] resize-none border-none focus:outline-none focus:ring-0 text-sm"
+              placeholder="Start typing an answer..."
+              value={answer}
+              onChange={(e) => onAnswerChange(e.target.value)}
+            ></textarea>
           </div>
         </div>
-        
-        <div className="p-3 min-h-[150px]">
-          <textarea 
-            className="w-full h-full min-h-[120px] resize-none border-none focus:outline-none focus:ring-0 text-sm"
-            placeholder="Start typing an answer..."
-            value={answer}
-            onChange={(e) => onAnswerChange(e.target.value)}
-          ></textarea>
-        </div>
-      </div>
+      )}
       
       <div className="mt-4">
         <h3 className="text-sm font-medium text-gray-600 mb-2">Related Answers</h3>

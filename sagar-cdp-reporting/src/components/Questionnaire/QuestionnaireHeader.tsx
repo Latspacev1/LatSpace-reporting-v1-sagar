@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CircleUser } from 'lucide-react';
 import CDPScoreModal from '../Modals/CDPScoreModal';
 import GenerateReportModal from '../Modals/GenerateReportModal';
+import cdpLogo from '../../assets/cdp-logo.png';
 
 const QuestionnaireHeader: React.FC = () => {
   const [showCDPScore, setShowCDPScore] = useState(false);
@@ -14,6 +15,7 @@ const QuestionnaireHeader: React.FC = () => {
           <button className="text-gray-500 hover:text-gray-700">
             <span className="text-sm">←</span>
           </button>
+          <img src={cdpLogo} alt="CDP Logo" className="h-5 w-auto mx-2" style={{height: 20}} />
           <h1 className="text-xl font-bold">CDP Climate Change Questionnaire 2025</h1>
           <div className="ml-2 flex items-center gap-2">
             <span className="bg-gray-100 text-gray-700 text-xs px-2 py-1">CDP - Sagar Cement</span>

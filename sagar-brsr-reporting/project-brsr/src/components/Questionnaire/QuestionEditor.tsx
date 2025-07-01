@@ -10,6 +10,8 @@ interface QuestionEditorProps {
   onAnswerChange: (answer: string) => void;
   onComplete?: (completed: boolean) => void;
   onDraftStateChange?: (state: DraftState) => void;
+  onCellClick?: (rowId: string, columnId: string, value: any) => void;
+  disabled?: boolean;
 }
 
 const QuestionEditor: React.FC<QuestionEditorProps> = ({ 
@@ -17,7 +19,9 @@ const QuestionEditor: React.FC<QuestionEditorProps> = ({
   answer,
   onAnswerChange,
   onComplete,
-  onDraftStateChange
+  onDraftStateChange,
+  onCellClick,
+  disabled = false
 }) => {
   const [isComplete, setIsComplete] = useState(false);
   const [format, setFormat] = useState('Normal');
@@ -62,6 +66,8 @@ const QuestionEditor: React.FC<QuestionEditorProps> = ({
           question={currentQuestion}
           value={answer}
           onChange={onAnswerChange}
+          onCellClick={onCellClick}
+          disabled={disabled}
         />
       </div>
       

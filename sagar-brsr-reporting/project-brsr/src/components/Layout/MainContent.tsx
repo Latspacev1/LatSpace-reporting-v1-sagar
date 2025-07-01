@@ -10,6 +10,8 @@ interface MainContentProps {
   onAnswerChange: (answer: string) => void;
   onQuestionComplete?: (questionId: string, completed: boolean) => void;
   onDraftStateChange?: (state: DraftState) => void;
+  onCellClick?: (rowId: string, columnId: string, value: any) => void;
+  disabled?: boolean;
 }
 
 const MainContent: React.FC<MainContentProps> = ({ 
@@ -17,7 +19,9 @@ const MainContent: React.FC<MainContentProps> = ({
   answer,
   onAnswerChange,
   onQuestionComplete,
-  onDraftStateChange
+  onDraftStateChange,
+  onCellClick,
+  disabled = false
 }) => {
   const [showDocumentation, setShowDocumentation] = useState(true);
   const currentQuestion = questions.find(q => q.id === questionId);
@@ -46,6 +50,8 @@ const MainContent: React.FC<MainContentProps> = ({
               onAnswerChange={onAnswerChange}
               onComplete={handleComplete}
               onDraftStateChange={handleDraftStateChange}
+              onCellClick={onCellClick}
+              disabled={disabled}
             />
             
           </div>

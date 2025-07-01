@@ -5,10 +5,16 @@ import { Agent, run, webSearchTool, tool } from '@openai/agents';
 import { z } from 'zod';
 import { googleDriveService } from './services/googleDrive.js';
 
-dotenv.config();
+dotenv.config({ path: '../.env' });
+
+// Validate OpenAI API key
+if (!process.env.OPENAI_API_KEY) {
+    console.error('OPENAI_API_KEY environment variable is required');
+    process.exit(1);
+}
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3002;
 
 // Initialize Google Drive service
 let isDriveInitialized = false;
@@ -81,17 +87,17 @@ const readGoogleDriveFileTool = tool({
     }
 });
 
-// Create the CDP Research Assistant Agent with both Web Search and Google Drive tools
+// Create the BRSR Research Assistant Agent with both Web Search and Google Drive tools
 const agent = new Agent({
-    name: 'CDP Research Assistant',
-    instructions: `You are a helpful assistant specializing in CDP (Carbon Disclosure Project) climate change disclosures. 
+    name: 'BRSR Research Assistant',
+    instructions: `You are a helpful assistant specializing in BRSR (Business Responsibility & Sustainability Reporting) disclosures. 
     
     You have access to two powerful information sources:
     
-    1. **Google Drive**: Contains internal documents, reports, guidelines, and data files related to CDP reporting.
+    1. **Google Drive**: Contains internal documents, reports, guidelines, and data files related to BRSR reporting.
        - Use search_google_drive to find relevant documents
        - Use read_google_drive_file to read specific documents
-       - Prioritize Drive documents for CDP-specific information, internal data, and historical reports
+       - Prioritize Drive documents for BRSR-specific information, internal data, and historical reports
     
     2. **Web Search**: For current information, latest regulations, and external sources.
        - Use web search for recent updates, news, and external references
@@ -102,12 +108,19 @@ const agent = new Agent({
     - Always cite your sources (document names for Drive, URLs for web)
     - Combine information from both sources for comprehensive answers
     
+    BRSR Context:
+    - BRSR is mandatory for top 1000 companies by market cap in India
+    - Focuses on Environmental, Social & Governance (ESG) disclosures
+    - Nine principles covering leadership, products, employee well-being, stakeholder engagement, human rights, environment, public policy, inclusive growth, and customer value
+    - Requires both qualitative disclosures and quantitative Key Performance Indicators (KPIs)
+    
     Common document types in Drive:
-    - CDP questionnaires and guidelines (PDF)
+    - BRSR templates and guidelines (PDF)
     - Previous years' submissions (PDF/DOCX)
-    - Emissions data (XLSX/CSV)
+    - ESG data and metrics (XLSX/CSV)  
     - Internal sustainability reports (PDF/PPTX)
-    - Policy documents (PDF/DOCX)`,
+    - Policy documents and procedures (PDF/DOCX)
+    - Third-party verification reports (PDF)`,
     tools: [
         webSearchTool(),
         searchGoogleDriveTool,
@@ -116,7 +129,7 @@ const agent = new Agent({
     model: 'gpt-4o'
 });
 
-console.log('CDP Research Assistant created with Web Search and Google Drive RAG');
+console.log('BRSR Research Assistant created with Web Search and Google Drive RAG');
 
 // Middleware
 app.use(cors());
@@ -126,11 +139,29 @@ app.use(express.json());
 app.get('/health', (req: express.Request, res: express.Response) => {
     res.json({ 
         status: 'ok', 
-        message: 'Server is running',
+        message: 'BRSR Server is running',
         agentReady: true,
         webSearchEnabled: true,
         googleDriveEnabled: isDriveInitialized
     });
+});
+
+// Simple test endpoint
+app.post('/api/test', (req: express.Request, res: express.Response) => {
+    try {
+        console.log('Test endpoint called');
+        res.json({ 
+            status: 'ok', 
+            message: 'Test endpoint working',
+            timestamp: new Date().toISOString()
+        });
+    } catch (error: any) {
+        console.error('Test endpoint error:', error);
+        res.status(500).json({ 
+            error: 'Test endpoint failed',
+            details: error.message 
+        });
+    }
 });
 
 // Chat endpoint with both web search and Google Drive RAG
@@ -146,78 +177,44 @@ app.post('/api/chat-with-search', async (req: express.Request, res: express.Resp
         // Get the user's message
         const userMessage = messages[messages.length - 1].content;
         
-        console.log('Processing message with Agents SDK:', userMessage);
+        console.log('Processing BRSR message:', userMessage);
         console.log('Session ID:', sessionId);
 
-        // Use the OpenAI Agents SDK to run the agent
+        // Use the OpenAI agent to process the message
         const result = await run(agent, userMessage);
-
-        console.log('Agent response received');
-
-        // Extract the response
-        const response = result.finalOutput || 'I apologize, but I could not generate a response.';
-
-        // Extract tool usage information
-        let searchResults: any[] = [];
-        let driveFiles: any[] = [];
         
-        if (result.steps) {
-            for (const step of result.steps) {
-                if (step.toolCalls) {
-                    for (const toolCall of step.toolCalls) {
-                        // Handle web search results
-                        if (toolCall.tool === 'web_search' && toolCall.result) {
-                            try {
-                                const searchData = typeof toolCall.result === 'string' 
-                                    ? JSON.parse(toolCall.result) 
-                                    : toolCall.result;
-                                
-                                if (searchData.results) {
-                                    searchResults = searchData.results.slice(0, 5).map((result: any) => ({
-                                        title: result.title || 'No title',
-                                        url: result.url || '',
-                                        content: result.snippet || result.content || 'No content available',
-                                        source: 'web'
-                                    }));
-                                }
-                            } catch (parseError) {
-                                console.log('Could not parse web search results:', parseError);
-                            }
-                        }
-                        
-                        // Handle Google Drive search results
-                        if (toolCall.tool === 'search_google_drive' && toolCall.result) {
-                            try {
-                                const driveData = typeof toolCall.result === 'string' 
-                                    ? JSON.parse(toolCall.result) 
-                                    : toolCall.result;
-                                
-                                if (driveData.files) {
-                                    driveFiles = driveData.files.map((file: any) => ({
-                                        id: file.id,
-                                        name: file.name,
-                                        mimeType: file.mimeType,
-                                        modifiedTime: file.modifiedTime,
-                                        source: 'drive'
-                                    }));
-                                }
-                            } catch (parseError) {
-                                console.log('Could not parse Drive search results:', parseError);
-                            }
-                        }
+        // Extract search results and drive files from the result
+        let searchResults = [];
+        let driveFiles = [];
+        
+        // Parse the result to extract structured data if available
+        if (result.messages && result.messages.length > 0) {
+            const lastMessage = result.messages[result.messages.length - 1];
+            
+            // Check if the response contains structured data
+            if (lastMessage.content && typeof lastMessage.content === 'string') {
+                try {
+                    // Try to parse any JSON-like content for search results
+                    const jsonMatch = lastMessage.content.match(/\{[\s\S]*\}/);
+                    if (jsonMatch) {
+                        const parsed = JSON.parse(jsonMatch[0]);
+                        if (parsed.searchResults) searchResults = parsed.searchResults;
+                        if (parsed.driveFiles) driveFiles = parsed.driveFiles;
                     }
+                } catch (e) {
+                    // Ignore parsing errors
                 }
             }
         }
 
         res.json({ 
-            response,
-            searchResults: searchResults.length > 0 ? searchResults : undefined,
-            driveFiles: driveFiles.length > 0 ? driveFiles : undefined
+            response: result.text || result.content || 'No response generated',
+            searchResults,
+            driveFiles
         });
 
     } catch (error: any) {
-        console.error('Agents SDK error:', error);
+        console.error('Chat endpoint error:', error);
         res.status(500).json({ 
             error: 'An error occurred',
             details: error.message 
@@ -236,15 +233,8 @@ app.post('/api/chat', async (req: express.Request, res: express.Response) => {
 
         const userMessage = messages[messages.length - 1].content;
         
-        // Create a simple agent without tools for basic chat
-        const simpleAgent = new Agent({
-            name: 'CDP Assistant',
-            instructions: 'You are a helpful assistant specializing in CDP Climate disclosures.',
-            model: 'gpt-4o'
-        });
-
-        const result = await run(simpleAgent, userMessage);
-        const response = result.finalOutput || 'No response generated';
+        // Mock response for testing
+        const response = `Hello! I'm your BRSR assistant. You said: "${userMessage}". This is a test response while we debug the OpenAI agents integration.`;
         
         res.json({ response });
 
@@ -277,7 +267,7 @@ async function startServer() {
     await initializeServices();
     
     app.listen(port, () => {
-        console.log(`Server running on port ${port}`);
+        console.log(`BRSR Server running on port ${port}`);
         console.log('OpenAI Agents SDK with Web Search and Google Drive RAG ready');
         if (!isDriveInitialized) {
             console.log('⚠️  Google Drive not configured. See GOOGLE_DRIVE_SETUP.md for instructions.');

@@ -7,9 +7,10 @@ interface FormFieldProps {
   value: any;
   onChange: (value: any) => void;
   disabled?: boolean;
+  onCellClick?: (rowId: string, columnId: string, value: any) => void;
 }
 
-const FormField: React.FC<FormFieldProps> = ({ question, value, onChange, disabled = false }) => {
+const FormField: React.FC<FormFieldProps> = ({ question, value, onChange, disabled = false, onCellClick }) => {
   const validateField = (val: any): string | null => {
     if (!question.validation) return null;
     
@@ -49,6 +50,7 @@ const FormField: React.FC<FormFieldProps> = ({ question, value, onChange, disabl
             value={value || []}
             onChange={onChange}
             disabled={disabled}
+            onCellClick={onCellClick}
           />
         );
 

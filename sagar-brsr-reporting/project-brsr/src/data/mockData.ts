@@ -286,17 +286,17 @@ export const questions: Question[] = [
     isEssential: true,
     tableConfig: {
       columns: [
-        { id: 'parameter', label: 'Parameter', type: 'text', required: true },
-        { id: 'fy_current', label: 'FY 2024-25 (Current)', type: 'number', required: true },
-        { id: 'fy_previous', label: 'FY 2023-24 (Previous)', type: 'number', required: true }
+        { id: 'parameter', label: 'Parameter', type: 'text' },
+        { id: 'fy_current', label: 'FY 2024-25 (Current)', type: 'number' },
+        { id: 'fy_previous', label: 'FY 2023-24 (Previous)', type: 'number' }
       ],
       rows: [
-        { id: 'total_electricity', label: 'Total Electricity Consumption (A)', data: {} },
-        { id: 'total_fuel', label: 'Total Fuel Consumption (B)', data: {} },
-        { id: 'energy_consumption', label: 'Energy Consumption through other sources (C)', data: {} },
-        { id: 'total_energy', label: 'Total Energy Consumption (A+B+C)', data: {} },
-        { id: 'energy_intensity', label: 'Energy Intensity per rupee of turnover', data: {} },
-        { id: 'energy_intensity_optional', label: 'Energy Intensity (optional) - per product', data: {} }
+        { id: 'total_electricity', label: 'Total Electricity Consumption (A)', data: { fy_current: '2500000', fy_previous: '2200000' } },
+        { id: 'total_fuel', label: 'Total Fuel Consumption (B)', data: { fy_current: '1800000', fy_previous: '1650000' } },
+        { id: 'energy_consumption', label: 'Energy Consumption through other sources (C)', data: { fy_current: '350000', fy_previous: '320000' } },
+        { id: 'total_energy', label: 'Total Energy Consumption (A+B+C)', data: { fy_current: '4650000', fy_previous: '4170000' } },
+        { id: 'energy_intensity', label: 'Energy Intensity per rupee of turnover', data: { fy_current: '0.0125', fy_previous: '0.0138' } },
+        { id: 'energy_intensity_optional', label: 'Energy Intensity (optional) - per product', data: { fy_current: '85.5', fy_previous: '82.3' } }
       ]
     }
   },
@@ -379,5 +379,266 @@ export const questions: Question[] = [
         { id: 'other_employees', label: 'Other than Permanent Employees', data: {} }
       ]
     }
+  }
+];
+
+export const rawFiles = [
+  {
+    id: 'rf1',
+    uploadType: 'Bulk Upload',
+    filename: 'Electricity-bill-matampally-2024-q1.csv',
+    user: 'mahesh@sagarcements.in',
+    timestamp: '2024-07-01 10:30:00'
+  },
+  {
+    id: 'rf2',
+    uploadType: 'Smart Upload',
+    filename: 'SPT131APR2024.pdf',
+    user: 'ramesh@sagarcements.in',
+    timestamp: '2024-07-01 10:30:00'
+  },
+  {
+    id: 'rf3',
+    uploadType: 'Manual Entry',
+    filename: 'SPT131APR2024.pdf',
+    user: 'ramesh@sagarcements.in',
+    timestamp: '2024-07-01 10:30:00'
+  },
+  {
+    id: 'rf4',
+    uploadType: 'Bulk Upload',
+    filename: 'Electricity-bill-sangareddy-2024-q2.csv',
+    user: 'suresh@sagarcements.in',
+    timestamp: '2024-08-15 14:22:00'
+  },
+  {
+    id: 'rf5',
+    uploadType: 'Smart Upload',
+    filename: 'TNEB-Bill-June2024.pdf',
+    user: 'priya@sagarcements.in',
+    timestamp: '2024-07-05 09:15:00'
+  },
+  {
+    id: 'rf6',
+    uploadType: 'Manual Entry',
+    filename: 'Energy-Consumption-Report-Q3.xlsx',
+    user: 'anitha@sagarcements.in',
+    timestamp: '2024-09-10 16:45:00'
+  },
+  {
+    id: 'rf7',
+    uploadType: 'Bulk Upload',
+    filename: 'Andhra-Pradesh-EB-Bills-2024.zip',
+    user: 'kiran@sagarcements.in',
+    timestamp: '2024-06-20 11:00:00'
+  },
+  {
+    id: 'rf8',
+    uploadType: 'Smart Upload',
+    filename: 'BESCOM-Monthly-Statement-Aug24.pdf',
+    user: 'vijay@sagarcements.in',
+    timestamp: '2024-09-02 13:30:00'
+  },
+  {
+    id: 'rf9',
+    uploadType: 'Manual Entry',
+    filename: 'Factory-Energy-Data-Sept2024.csv',
+    user: 'lakshmi@sagarcements.in',
+    timestamp: '2024-10-01 08:20:00'
+  },
+  {
+    id: 'rf10',
+    uploadType: 'Bulk Upload',
+    filename: 'Maharashtra-MSEDCL-Bills-Q2.pdf',
+    user: 'rajesh@sagarcements.in',
+    timestamp: '2024-07-25 15:10:00'
+  },
+  {
+    id: 'rf11',
+    uploadType: 'Smart Upload',
+    filename: 'Gujarat-Energy-Consumption-2024.xlsx',
+    user: 'amit@sagarcements.in',
+    timestamp: '2024-08-30 12:00:00'
+  },
+  {
+    id: 'rf12',
+    uploadType: 'Manual Entry',
+    filename: 'Renewable-Energy-Usage-Report.pdf',
+    user: 'deepa@sagarcements.in',
+    timestamp: '2024-09-15 10:45:00'
+  },
+  {
+    id: 'rf13',
+    uploadType: 'Bulk Upload',
+    filename: 'All-Plants-Energy-Summary-2024.csv',
+    user: 'admin@sagarcements.in',
+    timestamp: '2024-10-10 17:30:00'
+  },
+  {
+    id: 'rf14',
+    uploadType: 'Smart Upload',
+    filename: 'Solar-Generation-Data-Oct2024.pdf',
+    user: 'green.energy@sagarcements.in',
+    timestamp: '2024-10-15 14:20:00'
+  },
+  {
+    id: 'rf15',
+    uploadType: 'Manual Entry',
+    filename: 'Diesel-Generator-Usage-Q3.xlsx',
+    user: 'operations@sagarcements.in',
+    timestamp: '2024-09-28 16:00:00'
+  }
+];
+
+export const importedEnergyData = [
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant A',
+    source_type: 'Electricity',
+    energy_source: 'Grid',
+    renewable: 'N',
+    quantity: 34200,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 123.12,
+    energy_tj: 0.12312,
+    sr_category: 'D',
+    reference_doc: 'Grid_Bill_Apr23.pdf'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant A',
+    source_type: 'Electricity',
+    energy_source: 'Solar',
+    renewable: 'Y',
+    quantity: 5200,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 18.72,
+    energy_tj: 0.01872,
+    sr_category: 'A',
+    reference_doc: 'Solar_PPA_Meter_Apr23.csv'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant A',
+    source_type: 'Fuel',
+    energy_source: 'Coal',
+    renewable: 'N',
+    quantity: 150,
+    quantity_unit: 't',
+    ncv_gj_per_unit: 25,
+    energy_gj: 3750,
+    energy_tj: 3.75,
+    sr_category: 'E',
+    reference_doc: 'Coal_Purchase_Register.xlsx'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant A',
+    source_type: 'Fuel',
+    energy_source: 'Biomass',
+    renewable: 'Y',
+    quantity: 80,
+    quantity_unit: 't',
+    ncv_gj_per_unit: 15,
+    energy_gj: 1200,
+    energy_tj: 1.2,
+    sr_category: 'B',
+    reference_doc: 'Biomass_Invoice_Apr23.pdf'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant A',
+    source_type: 'Fuel',
+    energy_source: 'Diesel',
+    renewable: 'N',
+    quantity: 10,
+    quantity_unit: 'kL',
+    ncv_gj_per_unit: 35.8,
+    energy_gj: 358,
+    energy_tj: 0.358,
+    sr_category: 'E',
+    reference_doc: 'Diesel_Purchases_Apr23.xlsx'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant B',
+    source_type: 'Electricity',
+    energy_source: 'Grid',
+    renewable: 'N',
+    quantity: 28700,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 103.32,
+    energy_tj: 0.10332,
+    sr_category: 'D',
+    reference_doc: 'Grid_Bill_PlantB_Apr23.pdf'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Apr-23',
+    plant: 'Plant B',
+    source_type: 'Electricity',
+    energy_source: 'Wind PPA',
+    renewable: 'Y',
+    quantity: 6300,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 22.68,
+    energy_tj: 0.02268,
+    sr_category: 'A',
+    reference_doc: 'Wind_PPA_Meter_PlantB_Apr23.csv'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'May-23',
+    plant: 'Plant A',
+    source_type: 'Electricity',
+    energy_source: 'Grid',
+    renewable: 'N',
+    quantity: 35600,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 128.16,
+    energy_tj: 0.12816,
+    sr_category: 'D',
+    reference_doc: 'Grid_Bill_May23.pdf'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'May-23',
+    plant: 'Plant A',
+    source_type: 'Electricity',
+    energy_source: 'Solar',
+    renewable: 'Y',
+    quantity: 5800,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 20.88,
+    energy_tj: 0.02088,
+    sr_category: 'A',
+    reference_doc: 'Solar_PPA_Meter_May23.csv'
+  },
+  {
+    fiscal_year: 'FY 2023-24',
+    month: 'Jun-23',
+    plant: 'Plant C',
+    source_type: 'Electricity',
+    energy_source: 'Grid',
+    renewable: 'N',
+    quantity: 42300,
+    quantity_unit: 'kWh',
+    ncv_gj_per_unit: 0.0036,
+    energy_gj: 152.28,
+    energy_tj: 0.15228,
+    sr_category: 'D',
+    reference_doc: 'Grid_Bill_PlantC_Jun23.pdf'
   }
 ];

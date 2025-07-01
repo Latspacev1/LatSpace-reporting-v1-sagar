@@ -4,7 +4,7 @@ import Sidebar from './components/Layout/Sidebar';
 import MainContent from './components/Layout/MainContent';
 import CopilotPanel from './components/Layout/CopilotPanel';
 import QuestionnaireHeader from './components/Questionnaire/QuestionnaireHeader';
-import { categories, avhData } from './data/mockData';
+import { categories, avhData } from './data/avhData';
 import { DraftState } from './types';
 
 function App() {
@@ -15,9 +15,7 @@ function App() {
   const [categoriesState, setCategoriesState] = useState(categories);
   const [avhDataState, setAVHDataState] = useState(avhData);
   const [completedIndicators, setCompletedIndicators] = useState<Set<string>>(
-    new Set(avhData.find(d => d.year === selectedYear)?.indicators
-      .filter(i => i.completed)
-      .map(i => i.id) || [])
+    new Set()
   );
   const [draftState, setDraftState] = useState<DraftState>({
     isDrafting: false,
@@ -52,13 +50,11 @@ function App() {
 
   const handleYearChange = (year: number) => {
     setSelectedYear(year);
-    // Update completed indicators for the new year
-    const newYearData = avhDataState.find(d => d.year === year);
-    setCompletedIndicators(new Set(
-      newYearData?.indicators.filter(i => i.completed).map(i => i.id) || []
-    ));
+    // Reset completed indicators for the new year
+    setCompletedIndicators(new Set());
     
     // Reset selection to first indicator of the year
+    const newYearData = avhDataState.find(d => d.year === year);
     const firstIndicator = newYearData?.indicators[0];
     if (firstIndicator) {
       setSelectedIndicator(firstIndicator.id);

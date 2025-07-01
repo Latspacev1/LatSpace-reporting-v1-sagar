@@ -72,10 +72,11 @@ const mapToCleanCategory = (categories) => {
 const processIndicators = (indicators) => {
   return indicators
     .filter(indicator => 
-      indicator.internalId && 
       indicator.entity === 'Sagar Cements' &&
-      indicator.name && 
-      indicator.name !== `Indicator ${indicator.internalId}`
+      indicator.name !== 'indicators' &&
+      indicator.name !== 'Indicators' &&
+      indicator.entity !== 'entity' &&
+      indicator.entity !== 'Entity'
     )
     .map(indicator => {
       const cleanCategory = mapToCleanCategory(indicator.categories);
@@ -118,7 +119,7 @@ const processIndicators = (indicators) => {
         year: indicator.year,
         value: indicator.value,
         explanation: indicator.explanation,
-        completed: indicator.completed,
+        completed: false,
         notApplicable: false,
         notAvailable: false
       };
@@ -136,10 +137,9 @@ const cleanDatabase = {
   }))
 };
 
-// Update completion percentages
+// Update completion percentages (set to 0 since no questions are completed by default)
 cleanDatabase.data.forEach(yearData => {
-  const completed = yearData.indicators.filter(i => i.completed).length;
-  yearData.completionPercentage = Math.round((completed / yearData.indicators.length) * 100);
+  yearData.completionPercentage = 0;
 });
 
 fs.writeFileSync('src/data/avhData.ts', `import { AVHCategory, AVHData } from '../types';

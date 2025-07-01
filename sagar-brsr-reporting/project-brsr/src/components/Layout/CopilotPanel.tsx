@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Send, Paperclip, Search, FileText, Globe, CheckCircle2, Building2, Calculator, LineChart, DollarSign, Factory, Workflow, BarChart, PieChart, ArrowRight, AlertTriangle, Users, Calendar, MapPin, MessageCircleQuestion, PenTool, Key, Loader2, FolderOpen, File, Database, Brain, FileSearch } from 'lucide-react';
-import cdpLogo from '../../assets/cdp-logo.png';
+import { X, Send, Paperclip, Search, FileText, Globe, CheckCircle2, Building2, Calculator, LineChart, DollarSign, Factory, Workflow, BarChart, PieChart, ArrowRight, AlertTriangle, Users, Calendar, MapPin, MessageCircleQuestion, PenTool, Loader2, FolderOpen, File } from 'lucide-react';
 import { DraftState } from '../../types';
 import { sendChatMessageWithSearch, ChatMessage } from '../../services/openai';
 import toast from 'react-hot-toast';
@@ -9,7 +8,6 @@ interface CopilotPanelProps {
   onClose: () => void;
   draftState?: DraftState;
   questionId?: string;
-  initialMode?: 'ASK' | 'WRITE';
 }
 
 interface CopilotMessage {
@@ -25,7 +23,7 @@ const companyProfileWorkflow: CopilotMessage[] = [
   {
     type: 'system',
     content: 'Analyzing company profile...',
-    icon: <img src={cdpLogo} alt="CDP Logo" style={{height: 20, width: 'auto'}} />
+    icon: <Building2 className="text-blue-500" size={16} />
   },
   {
     type: 'table',
@@ -34,29 +32,29 @@ const companyProfileWorkflow: CopilotMessage[] = [
     data: {
       headers: ['Metric', 'Value'],
       rows: [
-        ['Founded', '1985'],
-        ['Listed Exchange', 'NSE (SAGCEM)'],
-        ['Employees', '~1,800'],
-        ['Industry', 'Cement Manufacturing']
+        ['Founded', '2017'],
+        ['Parent Group', 'Aditya Birla Group'],
+        ['CIN', 'U70100MH2017PTC303291'],
+        ['Industry', 'Real Estate Development']
       ]
     }
   },
   {
     type: 'table',
-    content: 'Production Capacity',
+    content: 'Development Portfolio',
     icon: <Factory className="text-green-500" size={16} />,
     data: {
-      headers: ['Product', 'Annual Capacity'],
+      headers: ['Metric', 'Value'],
       rows: [
-        ['Total Cement', '10 Million tonnes'],
-        ['Clinker', '7.5 Million tonnes'],
-        ['Grinding', '2.5 Million tonnes']
+        ['Area Under Development', '3+ Million sq. ft.'],
+        ['Active Cities', '4 (Mumbai, NCR, Bengaluru, Pune)'],
+        ['Green Certified Projects', '70% Portfolio']
       ]
     }
   },
   {
     type: 'alert',
-    content: '✓ Company profile verified against NSE listings',
+    content: '✓ Company profile verified against Aditya Birla Group subsidiaries',
     icon: <CheckCircle2 className="text-green-500" size={16} />
   }
 ];
@@ -87,9 +85,9 @@ const reportingPeriodWorkflow: CopilotMessage[] = [
     data: {
       headers: ['Scope', 'Coverage', 'Assurance'],
       rows: [
-        ['Scope 1', '100%', 'ISO 14064-3'],
-        ['Scope 2', '100%', 'ISO 14064-3'],
-        ['Scope 3', '85%', 'Limited']
+        ['Scope 1', '100%', 'Third-party verified'],
+        ['Scope 2', '100%', 'Third-party verified'],
+        ['Scope 3', '90%', 'Embodied carbon focus']
       ]
     }
   }
@@ -103,15 +101,15 @@ const geographicWorkflow: CopilotMessage[] = [
   },
   {
     type: 'table',
-    content: 'Manufacturing Facilities',
+    content: 'Active Development Projects',
     icon: <MapPin className="text-red-500" size={16} />,
     data: {
-      headers: ['Location', 'Type', 'Capacity'],
+      headers: ['Location', 'Project Type', 'Area (sq. ft.)'],
       rows: [
-        ['Telangana', 'Integrated Plant', '4.0 MT/yr'],
-        ['Andhra Pradesh', 'Integrated Plant', '3.5 MT/yr'],
-        ['Odisha', 'Grinding Unit', '1.5 MT/yr'],
-        ['Maharashtra', 'Grinding Unit', '1.0 MT/yr']
+        ['Mumbai', 'Premium Residential', '1.2M'],
+        ['NCR (Gurgaon)', 'Luxury Apartments', '0.8M'],
+        ['Bengaluru', 'Integrated Township', '0.7M'],
+        ['Pune', 'Mixed Development', '0.5M']
       ]
     }
   },
@@ -120,11 +118,12 @@ const geographicWorkflow: CopilotMessage[] = [
     content: 'Market Presence',
     icon: <BarChart className="text-indigo-500" size={16} />,
     data: {
-      headers: ['Region', 'Revenue Share', 'Growth'],
+      headers: ['Region', 'Project Share', 'Certification'],
       rows: [
-        ['South India', '65%', '+8%'],
-        ['West India', '20%', '+12%'],
-        ['East India', '15%', '+15%']
+        ['Mumbai Metro', '40%', 'IGBC Platinum'],
+        ['NCR', '30%', 'IGBC Gold'],
+        ['Bengaluru', '20%', 'GRIHA 4-star'],
+        ['Pune', '10%', 'EDGE Certified']
       ]
     }
   }
@@ -134,135 +133,63 @@ const emissionsWorkflow: CopilotMessage[] = [
   {
     type: 'system',
     content: 'Initiating comprehensive emissions analysis...',
-    icon: <img src={cdpLogo} alt="CDP Logo" style={{height: 20, width: 'auto'}} />
+    icon: <img src="/brsr-circle.svg" alt="BRSR Logo" className="h-4 w-4" />
   },
   {
     type: 'table',
-    content: 'Production Metrics',
+    content: 'Construction Activity Metrics',
     icon: <Factory className="text-blue-500" size={16} />,
     data: {
       headers: ['Metric', 'Value', 'Unit'],
       rows: [
-        ['Clinker Production', '2.5', 'Million tonnes'],
-        ['Clinker Factor', '0.95', 'Ratio'],
-        ['Thermal Efficiency', '3.2', 'GJ/tonne']
+        ['Area Under Construction', '2.1', 'Million sq. ft.'],
+        ['Concrete Consumption', '850', 'Thousand tonnes'],
+        ['Steel Consumption', '125', 'Thousand tonnes']
       ]
     }
   },
   {
     type: 'table',
-    content: 'Energy Mix Analysis',
+    content: 'Energy Source Analysis',
     icon: <PieChart className="text-green-500" size={16} />,
     data: {
-      headers: ['Fuel Type', 'Consumption', 'Share'],
+      headers: ['Source', 'Consumption', 'Share'],
       rows: [
-        ['Coal', '1.8M GJ', '45%'],
-        ['Natural Gas', '1.2M GJ', '30%'],
-        ['Alternative Fuels', '1.0M GJ', '25%']
+        ['Grid Electricity', '18.3 GWh', '60%'],
+        ['Diesel Generators', '8.7 GWh', '28%'],
+        ['Solar (On-site)', '3.6 GWh', '12%']
       ]
     }
   },
   {
     type: 'table',
-    content: 'Scope 1 Emissions Breakdown',
+    content: 'Emissions by Scope',
     icon: <Calculator className="text-orange-500" size={16} />,
     data: {
-      headers: ['Source', 'Emissions', 'Share'],
+      headers: ['Scope', 'Emissions', 'Share'],
       rows: [
-        ['Process Emissions', '1.3M tCO2e', '62%'],
-        ['Fuel Combustion', '0.8M tCO2e', '38%'],
-        ['Total Scope 1', '2.1M tCO2e', '100%']
+        ['Scope 1 (Direct)', '12.5k tCO2e', '6%'],
+        ['Scope 2 (Electricity)', '18.3k tCO2e', '8%'],
+        ['Scope 3 (Materials)', '185k tCO2e', '86%']
       ]
     }
   },
   {
     type: 'table',
-    content: 'Emissions Intensity Analysis',
+    content: 'Carbon Intensity Tracking',
     icon: <LineChart className="text-blue-500" size={16} />,
     data: {
       headers: ['Period', 'Intensity', 'Change'],
       rows: [
-        ['Current Year', '0.84 tCO2e/t', '-'],
-        ['Previous Year', '0.87 tCO2e/t', '-3.4%'],
-        ['2025 Target', '0.80 tCO2e/t', '-4.8%']
+        ['Current Year', '42.3 kgCO2e/sq.ft', '-'],
+        ['Previous Year', '48.1 kgCO2e/sq.ft', '-12%'],
+        ['2025 Target', '35.0 kgCO2e/sq.ft', '-17%']
       ]
     }
   },
   {
     type: 'alert',
-    content: '✓ All emissions data verified by third-party auditor (ISO 14064-3)',
-    icon: <CheckCircle2 className="text-green-500" size={16} />
-  }
-];
-
-const agenticWorkflow: CopilotMessage[] = [
-  {
-    type: 'system',
-    content: 'Initiating AI agent workflow for CDP response generation...',
-    icon: <Brain className="text-purple-500" size={16} />
-  },
-  {
-    type: 'action',
-    content: 'Step 1: Searching LatSpace ESG database for relevant industry benchmarks...',
-    icon: <Database className="text-blue-500" size={16} />
-  },
-  {
-    type: 'table',
-    content: 'ESG Database Results',
-    icon: <Search className="text-blue-500" size={16} />,
-    data: {
-      headers: ['Data Source', 'Relevance', 'Last Updated'],
-      rows: [
-        ['Cement Industry Emissions Benchmarks', 'High', '2024-03-15'],
-        ['Indian Manufacturing Standards', 'High', '2024-02-28'],
-        ['CDP Climate Response Templates', 'Medium', '2024-01-10']
-      ]
-    }
-  },
-  {
-    type: 'action',
-    content: 'Step 2: Analyzing Sagar Cement internal company documents...',
-    icon: <FileSearch className="text-green-500" size={16} />
-  },
-  {
-    type: 'table',
-    content: 'Internal Documents Analysis',
-    icon: <FileText className="text-green-500" size={16} />,
-    data: {
-      headers: ['Document', 'Key Insights', 'Confidence'],
-      rows: [
-        ['Annual Report 2024', 'Financial performance & capacity', '95%'],
-        ['Sustainability Report 2024', 'Environmental metrics', '92%'],
-        ['Operations Manual', 'Technical specifications', '88%']
-      ]
-    }
-  },
-  {
-    type: 'action',
-    content: 'Step 3: Reading previous year Sagar Cement CDP disclosure...',
-    icon: <Calendar className="text-orange-500" size={16} />
-  },
-  {
-    type: 'table',
-    content: 'Previous CDP Response Analysis',
-    icon: <img src={cdpLogo} alt="CDP Logo" style={{height: 16, width: 'auto'}} />,
-    data: {
-      headers: ['Section', 'Previous Response', 'Changes Needed'],
-      rows: [
-        ['Company Profile', 'Complete', 'Update capacity figures'],
-        ['Emissions Data', 'Complete', 'Update FY24 figures'],
-        ['Targets & Performance', 'Partial', 'Add new commitments']
-      ]
-    }
-  },
-  {
-    type: 'thinking',
-    content: 'Synthesizing data from multiple sources to create comprehensive response...',
-    icon: <Workflow className="text-indigo-500" size={16} />
-  },
-  {
-    type: 'alert',
-    content: '✓ Draft answer ready! Generated response based on company data, industry benchmarks, and CDP requirements.',
+    content: '✓ All emissions data verified with focus on embodied carbon reduction',
     icon: <CheckCircle2 className="text-green-500" size={16} />
   }
 ];
@@ -279,15 +206,15 @@ function renderCopilotContent(content: string) {
   });
 }
 
-const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questionId, initialMode }) => {
+const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questionId }) => {
   const [message, setMessage] = useState('');
-  const [mode, setMode] = useState<'ASK' | 'WRITE'>(initialMode || 'ASK');
+  const [mode, setMode] = useState<'ASK' | 'WRITE'>('ASK');
   const [isLoading, setIsLoading] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
   const [messages, setMessages] = useState<CopilotMessage[]>([
     {
       type: 'system',
-      content: "Hello! I'm your Copilot assistant for CDP Climate disclosures. How can I help you today?",
+      content: "Hello! I'm your Copilot assistant for BRSR disclosures. How can I help you today?",
     }
   ]);
 
@@ -325,7 +252,7 @@ const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questi
       const chatHistory: ChatMessage[] = [
         {
           role: 'system',
-          content: 'You are a helpful assistant specializing in CDP (Carbon Disclosure Project) climate change disclosures. Help users understand and complete their CDP reporting requirements.'
+          content: 'You are a helpful assistant specializing in BRSR (Business Responsibility & Sustainability Reporting) disclosures. Help users understand and complete their BRSR reporting requirements.'
         },
         ...messages.filter(m => m.type === 'user' || m.type === 'assistant').map(m => ({
           role: m.type as 'user' | 'assistant',
@@ -365,7 +292,7 @@ const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questi
       addMessage({
         type: 'assistant',
         content: result.response,
-        icon: <img src={cdpLogo} alt="CDP Logo" style={{height: 20, width: 'auto'}} />
+        icon: <img src="/brsr-circle.svg" alt="BRSR Logo" className="h-4 w-4" />
       });
     } catch (error) {
       toast.error('Failed to get response. Please check your API key.');
@@ -379,8 +306,38 @@ const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questi
   const clearMessages = () => {
     setMessages([{
       type: 'system',
-      content: "Hello! I'm your Copilot assistant for CDP Climate disclosures. How can I help you today?",
+      content: "Hello! I'm your Copilot assistant for BRSR disclosures. How can I help you today?",
     }]);
+  };
+
+  const runWorkflow = async (workflowName: string) => {
+    let sequence: CopilotMessage[];
+    switch (workflowName) {
+      case 'Company Profile':
+        sequence = companyProfileWorkflow;
+        break;
+      case 'Reporting Period':
+        sequence = reportingPeriodWorkflow;
+        break;
+      case 'Geographic':
+        sequence = geographicWorkflow;
+        break;
+      case 'Emissions':
+        sequence = emissionsWorkflow;
+        break;
+      default:
+        sequence = [];
+    }
+
+    setIsLoading(true);
+
+    for (const step of sequence) {
+      addMessage(step);
+      // Simulate processing time
+      await new Promise(resolve => setTimeout(resolve, 800 + Math.random() * 500));
+    }
+    
+    setIsLoading(false);
   };
 
   const renderTable = (data: { headers: string[], rows: string[][] }) => (
@@ -410,60 +367,24 @@ const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questi
     </div>
   );
 
-  const runWorkflow = async (workflowName: string) => {
-    let sequence: CopilotMessage[];
-    switch (workflowName) {
-      case 'Company Profile':
-        sequence = companyProfileWorkflow;
-        break;
-      case 'Reporting Period':
-        sequence = reportingPeriodWorkflow;
-        break;
-      case 'Geographic':
-        sequence = geographicWorkflow;
-        break;
-      case 'Emissions':
-        sequence = emissionsWorkflow;
-        break;
-      case 'agentic':
-        sequence = agenticWorkflow;
-        break;
-      default:
-        sequence = [];
-    }
-
-    setIsLoading(true);
-
-    for (const step of sequence) {
-      addMessage(step);
-      // Simulate processing time
-      await new Promise(resolve => setTimeout(resolve, 800 + Math.random() * 500));
-    }
-    
-    setIsLoading(false);
-  };
-
   useEffect(() => {
-    if (draftState?.isDrafting && mode === 'WRITE') {
+    if (draftState?.isDrafting && questionId) {
       clearMessages();
-      runWorkflow('agentic');
+      runWorkflow(questionId);
     }
-  }, [draftState?.isDrafting, mode]);
-
-  // Update mode when initialMode changes
-  useEffect(() => {
-    if (initialMode) {
-      setMode(initialMode);
-    }
-  }, [initialMode]);
+  }, [draftState?.isDrafting, questionId]);
   
   return (
     <div className="w-96 border-l border-gray-200 bg-white flex flex-col h-full">
       <div className="p-4 border-b border-gray-200 bg-gray-50">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
-            <img src={cdpLogo} alt="CDP Logo" style={{height: 20, width: 'auto'}} />
-            <span className="font-medium">CDP Analysis Copilot</span>
+            <img 
+              src="/brsr-circle.svg"
+              alt="BRSR Logo"
+              className="h-5 w-5"
+            />
+            <span className="font-medium">BRSR Analysis Copilot</span>
           </div>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
             <X size={18} />
@@ -570,7 +491,7 @@ const CopilotPanel: React.FC<CopilotPanelProps> = ({ onClose, draftState, questi
         <div className="flex items-center w-full">
           <input
             type="text"
-            placeholder={mode === 'ASK' ? "Ask about CDP disclosures..." : "Describe what you want to write..."}
+            placeholder={mode === 'ASK' ? "Ask about BRSR disclosures..." : "Describe what you want to write..."}
             className="flex-1 border border-gray-200 py-2 px-3 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-sm rounded-l"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
